@@ -1,12 +1,9 @@
 <template>
 	<v-app>
+		<layoutHeader />
 		<v-main>
 			<slot />
 		</v-main>
+		<layoutFooter />
 	</v-app>
 </template>
-<script>
-export default {
-	name: 'DefaultLayout',
-}
-</script>
