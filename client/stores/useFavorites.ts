@@ -1,12 +1,12 @@
 interface Rocket {
 	id: string
-	name: String
-	description: String
+	name: string
+	description: string
 	firstFlight: Date
-	height: Number
-	diameter: Number
-	mass: Number
-	stages: Number
+	height: number
+	diameter: number
+	mass: number
+	stages: number
 }
 
 interface Props {
@@ -18,7 +18,7 @@ export const useFavorites = defineStore('favorites', {
 
 	actions: {
 		addFavorite(rocket: Rocket) {
-			let keyVal: String[] = []
+			let keyVal: string[] = []
 			if (this.favoritesData.length) {
 				keyVal = this.favoritesData.map((e) => e.id)
 			}

@@ -1,28 +1,28 @@
 export type Launch = {
 	id: string
-	mission_name: String
+	mission_name: string
 	launch_date_local: Date
 
 	launch_site: {
-		site_name: String
+		site_name: string
 	}
-	details?: String
+	details?: string
 	rocket: {
 		rocket: {
 			id: string
-			name: String
-			description: String
+			name: string
+			description: string
 			first_flight: Date
 			height: {
-				meters: Number
+				meters: number
 			}
 			diameter: {
-				meters: Number
+				meters: number
 			}
 			mass: {
-				kg: Number
+				kg: number
 			}
-			stages: Number
+			stages: number
 		}
 	}
 }
@@ -34,18 +34,18 @@ export type LaunchesProps = {
 export type RocketDetail = {
 	rocket: {
 		id: string
-		name: String
-		description: String
+		name: string
+		description: string
 		first_flight: Date
 		height: {
-			meters: Number
+			meters: number
 		}
 		diameter: {
-			meters: Number
+			meters: number
 		}
 		mass: {
-			kg: Number
+			kg: number
 		}
-		stages: Number
+		stages: number
 	}
 }
